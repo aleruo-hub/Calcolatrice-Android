@@ -21,6 +21,12 @@ android {
 }
 
 dependencies {
+    // Allinea le librerie Kotlin transitive ed evita classi duplicate.
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22")
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22")
+    }
+
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("androidx.activity:activity:1.9.3")
     implementation("androidx.core:core:1.15.0")
